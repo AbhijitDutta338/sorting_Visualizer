@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  padding: 0 16px;
+}
+.array-container{
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+  
+.array-bar {
+  width: 11px;
+  background-color: turquoise;
+  display: inline-block;
+  margin: 0 1px;
+}
+header {
+  background-color: #890596;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px; 
+  position: fixed;
+  left: 0;
+  background-color: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+  overflow-x: hidden; 
+  padding-top: 25px;
+  padding-left: 20px;
+}
