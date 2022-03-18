@@ -26,8 +26,8 @@ export default class SortV extends React.Component {
 
   resetArray() {
     const array = [];
-    for (let i = 0; i < 100; i++) {
-      array.push(randomIntFromInterval(5, 600));
+    for (let i = 0; i < 70; i++) {
+      array.push(randomIntFromInterval(5, 85));
     }
     this.setState({ array });
   }
@@ -57,7 +57,7 @@ export default class SortV extends React.Component {
         setTimeout(() => {
           const [barOneIdx, newHeight] = animations[i];
           const barOneStyle = arrayBars[barOneIdx].style;
-          barOneStyle.height = `${newHeight}px`;
+          barOneStyle.height = `${newHeight}vh`;
         }, i * ANIMATION_SPEED_MS);
       }
     }
@@ -88,7 +88,7 @@ export default class SortV extends React.Component {
         setTimeout(() => {
           const [barOneIdx, newHeight] = animations[i];
           const barOneStyle = arrayBars[barOneIdx].style;
-          barOneStyle.height = `${newHeight}px`;
+          barOneStyle.height = `${newHeight}vh`;
         }, i * ANIMATION_SPEED_MS);
       }
     }
@@ -97,7 +97,7 @@ export default class SortV extends React.Component {
   render() {
     const { array } = this.state;
     return (
-      <div>
+      <div className="application">
         <div className="sidenav">
           <Button 
             variant="outlined" 
@@ -160,7 +160,7 @@ export default class SortV extends React.Component {
             <div
               className="array-bar"
               key={index}
-              style={{ height: value}}
+              style={{ height: `${value}vh`}}
             ></div>
           ))}
         </div>

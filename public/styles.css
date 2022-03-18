@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 html {
   font-family: "Montserrat", sans-serif;
@@ -10,16 +9,25 @@ body {
   background: #eee;
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
-  padding: 0 16px;
+  width: 100vw;
+  height: 100vh;
+}
+.App{
+  display: inline-flex;
+  flex-direction: column;
+}
+.application{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  align-items: flex-end;
 }
 .array-container{
-  position: absolute;
-  bottom: 0;
-  left: 200px;
+  left: 15vw;
+  display: inline;
 }
-  
 .array-bar {
-  width: 11px;
+  width: 1vw;
   background-color: turquoise;
   display: inline-block;
   margin: 0 1px;
@@ -27,7 +35,7 @@ body {
 header {
   background-color: #890596;
   margin: auto -16px;
-  padding: 16px 32px;
+  height: 10vh;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -38,13 +46,9 @@ header h1 {
 }
 
 .sidenav {
-  height: 100%;
-  width: 160px; 
-  position: fixed;
+  height: 90vh;
+  width: 15vw; 
   left: 0;
   background-color: #eee;
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
-  overflow-x: hidden; 
-  padding-top: 25px;
-  padding-left: 20px;
 }
